@@ -1,0 +1,65 @@
+#include <iostream>
+using namespace std; 
+class st
+{  
+char* group; 
+char* FIO; 
+public: st(char* _name,char* _group)
+{ 
+FIO=_name; 
+group=_group;  
+} 
+char* 
+getName() 
+{
+return FIO;
+}
+
+char* getGroup() {return group;}
+
+}; 
+int main()
+{
+int m[5]={5,4,5,3,2};
+int n[5]={741,742,741,741,742};
+string stu[5] = {
+    "Amgalan", "Kirill", "Pasha",
+    "Bair", "Misha"};
+
+st a("Amgalan","'K-741'");
+cout<<a.getName(); 
+cout<<" Gruppa k-"; 
+cout<<n[0];  
+cout<<" Ochenca "; 
+cout<<m[0];
+cout<<"\n"; 
+st b("Kirill","'K-741;"); 
+cout<<b.getName(); 
+cout<<" Gruppa k-"; 
+cout<<n[1]; 
+cout<<" Ochenca "; 
+cout<<m[1]; 
+cout<<"\n"; 
+st c("Pasha","'K-741;"); 
+cout<<c.getName(); 
+cout<<" Gruppa k-"; 
+cout<<n[2]; 
+cout<<" Ochenca "; 
+cout<<m[2];
+cout<<"\n"; 
+st d("Bair","'K-741;"); 
+cout<<d.getName(); 
+cout<<" Gruppa k-"; 
+cout<<n[3];
+cout<<" Ochenca "; 
+cout<<m[3]; 
+cout<<"\n"; 
+st e("Misha","'K-741;"); 
+cout<<e.getName(); 
+cout<<" Gruppa k-"; 
+cout<<n[4]; 
+cout<<" Ochenca "; 
+cout<<m[4]; 
+cout<<"\n";
+system("pause"); 
+}
